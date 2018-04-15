@@ -1,6 +1,5 @@
 FROM python:3.6-alpine
 #FROM rcarmo/alpine-python:3.6.1
-
 RUN apk --update --no-cache --virtual=build-dependencies add \
         build-base python3-dev \libxml2-dev libxslt-dev postgresql-dev  && \
     apk --update --no-cache add libstdc++ redis libpq && \
